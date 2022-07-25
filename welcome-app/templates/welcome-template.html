@@ -9,6 +9,13 @@
          <title>Welcome {{.Name}}</title>
    </head>
    <body>
-      <div class="welcome center">Welcome {{.Name}}, it is {{.Time}}</div>
+      <h1 class="loginHeader">Sign In</h1>
+      <form action="/login" method="post">
+         <div class="fieldContainer">
+            <input class="usernameInput" onfocus="this.value=''" onblur="true" value="Username..." type="text" name="username">
+            <input class="passwordInput" onfocus="this.value=''" value="Password..." type="text" name="password">
+         </div>
+         <input class="loginButton" type="submit" value="Login">
+     </form>
    </body>
 </html>
